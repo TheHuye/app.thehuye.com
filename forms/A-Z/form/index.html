@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base Forms Client</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+ <img src="../assets/loading.gif" alt="loading" id="loading">
+    <div id="msgbox">
+        <p>Error element here</p>
+    </div>
+<div class="center">
+<form action="" id="userFormSub">
+
+<!-- Personal details -->
+
+
+    <div class="form-section active" id="section1">
+    <h2>personal details</h2>
+    <label for="firstName">Enter the firstName</label>
+    <input autocomplete="off" type="text" name="firstName" id="firstName">
+    <label for="middleName">Enter the middleName</label>
+    <input autocomplete="off" type="text" name="middleName" id="middleName">
+    <label for="lastName">Enter the lastName</label>
+    <input autocomplete="off" type="text" name="lastName" id="lastName">
+    <label for="gender">Enter the gender</label>
+    <select id="gender" class="select-dropdown">
+        <option value="select">Select gender...</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+    </select>
+    <label for="DOB">Enter the DOB</label>
+    <input type="date" name="DOB" id="DOB">
+    <label for="email">Enter the email</label>
+    <input autocomplete="off" type="text" name="email" id="email">
+    <label for="phone">Enter the phone</label>
+    <input autocomplete="off" type="text" name="phone" id="phone">
+    <label for="whatsappPhone">Enter the whatsappPhone</label>
+    <input autocomplete="off" type="text" name="whatsappPhone" id="whatsappPhone">
+    <label for="idNumber">Enter the idNumber</label>
+    <input autocomplete="off" type="text" name="idNumber" id="idNumber">
+    <button onclick="nextSection(1)" class="up">Next</button>
+    </div>
+
+<!-- Academic details -->
+
+    <div class="form-section" id="section2">
+    <h2>Academic details</h2>
+    <label for="yearCompleted">Enter the yearCompleted</label>
+    <select name="yearCompleted" id="yearCompleted" class="select-dropdown">
+        <option value="select">Select year you completed secondary..</option>
+    </select>
+    <label for="schoolCat">Enter the schoolCat</label>
+    <select id="schoolCat" class="select-dropdown">
+        <option value="select">Select Secondary School Category..</option>
+        <option value="TTC">TTC</option>
+        <option value="GE">TVET</option>
+        <option value="other">Other</option>
+    </select>
+    <label for="combination">Enter the combination</label>
+    <input autocomplete="off" type="text" name="combination" id="combination">
+    <label for="indexNumber">Enter the indexNumber</label>
+    <input autocomplete="off" type="text" name="indexNumber" id="indexNumber">
+
+    <button onclick="prevSection(2)" class="up">Previous</button>
+    <button onclick="nextSection(2)">Next</button>
+    </div>
+
+<!--  Parental and Guardian details-->
+
+    <div class="form-section" id="section3">
+    <h2>Parental and Guardian details</h2>
+    <label for="fatherNames">Enter the fatherNames</label>
+    <input autocomplete="off" type="text" name="fatherNames" id="fatherNames">
+    <label for="fatherPhone">Enter the fatherPhone</label>
+    <input autocomplete="off" type="text" name="fatherPhone" id="fatherPhone">
+    <label for="motherNames">Enter the motherNames</label>
+    <input autocomplete="off" type="text" name="motherNames" id="motherNames">
+    <label for="motherPhone">Enter the motherPhone</label>
+    <input autocomplete="off" type="text" name="motherPhone" id="motherPhone">
+    <label for="guardianNames">Enter the guardianNames</label>
+    <input autocomplete="off" type="text" name="guardianNames" id="guardianNames">
+    <label for="guardianPhone">Enter the guardianPhone</label>
+    <input autocomplete="off" type="text" name="guardianPhone" id="guardianPhone">
+    <button onclick="prevSection(3)" class="up">Previous</button>
+    <button onclick="nextSection(3)">Next</button>
+    </div>
+    
+<!-- location and identity status -->
+    
+    <div class="form-section" id="section4">
+    <h2>location and identity status</h2>
+
+    <label for="countryBirth">Select country of birth</label>
+    <select id="countryBirth" class="select-dropdown">
+        <option value="Rw">Rwanda</option>
+    </select>
+
+    <label for="countryNationality">Select country of Nationality</label>
+    <select id="countryNationality" class="select-dropdown">
+        <option value="select">Select country of Nationality</option>
+        <option value="Rw">Rwanda</option>
+    </select>
+
+    <label for="country">Select Country of residance</label>
+    <select name="country" id="country" class="select-dropdown">
+        <option value="select">Select the country of residance</option>
+    </select>
+
+    <label for="province">Select Your province</label>
+    <select name="province" id="province" class="select-dropdown">
+        <option value="select">Select Your Province</option>
+    </select>
+
+    <label for="district">Enter the district</label>
+    <select name="district" id="district" class="select-dropdown">
+        <option value="select">Select Your District</option>
+    </select>
+
+    <label for="sector">Enter the sector</label>
+    <select name="sector" id="sector" class="select-dropdown">
+        <option value="select">Select Your Sector</option>
+    </select>
+
+    <label for="cell">Enter the cell</label>
+    <select name="cell" id="cell" class="select-dropdown">
+        <option value="select">Select Your Cell</option>
+    </select>
+
+    <label for="village">Enter the village</label>
+    <select name="village" id="village" class="select-dropdown">
+        <option value="select">Select Your Village</option>
+    </select>
+
+    <button onclick="prevSection(4)" class="up">Previous</button>
+    <button onclick="nextSection(4)">Next</button>
+
+    </div>
+
+<!-- additional details -->
+
+    <div class="form-section" id="section5">
+    <h2>additional details</h2>
+    <label for="disabilities">Enter the disabilities</label>
+    <select id="disabilities" class="select-dropdown">
+        <option value="select">Select your disability...</option>
+        <option value="not-applicable">Not Applicable</option>
+        <option value="blindness">Blindness</option>
+        <option value="low-vision">Low Vision</option>
+        <option value="deafness">Deafness</option>
+        <option value="hard-of-hearing">Hard of Hearing</option>
+        <option value="mobility-impairment">Mobility Impairment</option>
+        <option value="cognitive-disability">Cognitive Disability</option>
+        <option value="mental-health-condition">Mental Health Condition</option>
+        <option value="learning-disability">Learning Disability</option>
+        <option value="autism-spectrum-disorder">Autism Spectrum Disorder</option>
+    </select>
+    <label for="maritalStatus">Enter the maritalStatus</label>
+    <select id="maritalStatus" class="select-dropdown">
+        <option value="select">Select your marital status...</option>
+        <option value="single">Single</option>
+        <option value="married">Married</option>
+        <option value="divorced">Divorced</option>
+    </select>
+    <label for="work">Enter the work</label>
+    <select id="work" class="select-dropdown">
+        <option value="select">Select your working status...</option>
+        <option value="unemployed">Unemployed</option>
+        <option value="student">Student</option>
+        <option value="Employed">Employed</option>
+        <option value="Employed">Other</option>
+    </select>
+
+    <button onclick="prevSection(5)" class="up">Previous</button>
+    <button onclick="nextSection(5)">Next</button>
+
+    </div>
+    
+<!-- Supporting Documents -->
+
+    <div class="form-section" id="section6">
+    <h2>Supporting Documents</h2>
+    <label for="idDocument">Enter the idDocument</label>
+    <input autocomplete="off" type="file" name="idDocument" id="idDocument">
+    <label for="resultSlip">Enter the resultSlip</label>
+    <input autocomplete="off" type="file" name="resultSlip" id="resultSlip">
+    <label for="passportImage">Enter the passportImage</label>
+    <input autocomplete="off" type="file" name="passportImage" id="passportImage">
+
+    <button onclick="prevSection(6)" class="up">Previous</button>
+    <button onclick="nextSection(6)">Next</button>
+    </div>
+
+<!-- Submit page -->
+
+    <div class="form-section" id="section7">
+    <h2>Submit page</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, fugit, iusto numquam est vel voluptatum repellendus nam, aperiam optio pariatur incidunt dolorem mollitia nihil illo repellat veritatis praesentium magni amet. <br> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, fugit, iusto numquam est vel voluptatum repellendus nam, aperiam optio pariatur incidunt dolorem mollitia nihil illo repellat veritatis praesentium magni amet.</p>
+    <button onclick="prevSection(7)" class="up">Previous</button>
+    <input type="submit" value="Submit form">
+    </div>
+</form>
+</div>
+</body>
+<script src="./rwandageostructure.js"></script>
+<script src="./pages.js"></script>
+<script src="./validation.js"></script>
+<script src="./app.js"></script>
+
+<script>
+    function populateYearDropdown() {
+        const select = document.getElementById('yearCompleted');
+        const currentYear = new Date().getFullYear();
+        const startYear = 2018; // or any starting year you prefer
+    
+        for (let year = currentYear; year >= startYear; year--) {
+            const option = document.createElement('option');
+            option.value = year;
+            option.textContent = year;
+            select.appendChild(option);
+        }
+    }
+    
+    window.onload = populateYearDropdown;
+</script>
+</html>
