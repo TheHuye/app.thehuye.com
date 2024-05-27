@@ -46,7 +46,7 @@ const work = document.getElementById('work').value
 const idDocument = document.getElementById('idDocument').files[0];
 const resultSlip = document.getElementById('resultSlip').files[0];
 const passportImage = document.getElementById('passportImage').files[0];
-const formName = 'TestingPhase';
+const formName = 'LoanAssit';
 
 const formData = new FormData();
 formData.append('formName', formName);
