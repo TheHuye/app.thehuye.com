@@ -38,7 +38,7 @@ header {
 }
 
 header .logo img {
-    height: 40px;
+    height: 45px;
 }
 header .menu img {
     display: none;
@@ -166,10 +166,6 @@ footer a:hover {
 
 /* Large screens */
 @media (min-width: 1200px) {
-    header .logo img {
-        height: 30px;
-    }
-
     .more, .blogposts {
         padding: 20px 100px;
     }
