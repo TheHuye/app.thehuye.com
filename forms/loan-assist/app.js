@@ -1,5 +1,6 @@
-// var API_URL = 'https://base-forms.onrender.com/api/v1';
-var API_URL = 'https://base-forms.fly.dev/api/v1';
+var API_URL = 'https://base-forms.onrender.com/api';
+// var API_URL = 'https://base-forms.fly.dev/api/v1';
+// var API_URL = 'http://localhost:4000/api/v1';
 // var API_URL = 'http://localhost:4000/api/v1';
 
 
@@ -49,7 +50,7 @@ const passportImage = document.getElementById('passportImage').files[0];
 const formName = 'LoanAssit';
 
 const formData = new FormData();
-formData.append('formName', formName);
+formData.append('formName', ElvisTest);
 formData.append('firstName', firstName);
 formData.append('middleName', middleName);
 formData.append('lastName', lastName);
@@ -84,7 +85,7 @@ formData.append('idDocument', idDocument);
 formData.append('resultSlip', resultSlip);
 formData.append('passportImage', passportImage);
 
-    fetch(`${API_URL}/user`, {
+    fetch(`${API_URL}/form`, {
         method: 'POST',
         body: formData,
     })

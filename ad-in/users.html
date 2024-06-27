@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheHuyeCom | Scholarships Updates, Financial Aid and Grants</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="./admin.css">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <a href="https://app.thehuye.com/">
+            <img src="https://thehuye.com/wp-content/uploads/2022/06/the-huye-canvas-width-wide-no-1.png" alt="TheHuye Logo Image">
+        </a>
+    </div>
+    <div class="menu">
+        <img src="../assets/menu-icon-transparent.png" alt="">
+        <menu>
+            <ul><a href="./index.html">Home</a></ul>
+            <ul><a href="./users.html">Users</a></ul>
+            <ul><a href="./forms.html">Team</a></ul>
+            <ul><a href="#">None</a></ul>
+            <ul><a href="#" onclick="userLogout()">Logout</a></ul>
+        </menu>
+    </div>
+</header>
+
+<div id="simpleModal" class="modal">
+    <div class="modal-content" id="modal-content">
+        <span class="closeBtn" onclick="closeModal()">&times;</span>
+        <!-- content goes here -->
+        <!-- content ends here -->
+
+    </div>
+</div>
+
+<main>
+<div class="hero dark">
+    <h1>Admin</h1>
+    <h2>See all users in your form</h2>
+</div>
+
+<div class="choose-form">
+    <h1>Select Which Form To Choose FROM</h1>
+    <select name="form" id="form">
+        <option value="zero">Choose FROM</option>
+        <option value="zero">Choose FROM</option>
+        <option value="zero">Choose FROM</option>
+        <option value="zero">Choose FROM</option>
+        <option value="zero">Choose FROM</option>
+    </select>
+</div>
+<div class="table-container">
+    <table id="tables" style="margin-bottom: 180px;">
+        <tr>
+            <th>FirstName</th>
+            <th>Email</th>
+            <th>WhatsAppPhone</th>
+            <th>IdNumber</th>
+            <th>IndexNumber</th>
+            <th>createdAt</th>
+            <th>Details</th>
+            <th>Download</th>
+        </tr>
+        <tr>
+            <td>firstName</td>
+            <td>email</td>
+            <td>whatsappPhone</td>
+            <td>idNumber</td>
+            <td>indexNumber</td>
+            <td>createdAt</td>
+            <td onclick="displayItem()" class="modalBtn"><span>createdAt</span></td>
+            <td onclick="displayItem()" class="modalBtn"><span>Download</span></td>
+        </tr>
+        <tr>
+            <td>firstName</td>
+            <td>email</td>
+            <td>whatsappPhone</td>
+            <td>idNumber</td>
+            <td>indexNumber</td>
+            <td>createdAt</td>
+            <td onclick="displayItem()" class="modalBtn"><span>createdAt</span></td>
+            <td onclick="displayItem()" class="modalBtn"><span>Download</span></td>
+        </tr>
+    </table>
+</div>
+</main>
+
+<footer>
+    <a href="./privacy-policy.html">Privacy Policy</a>
+    <p>Copyright © 2023 | TheHuye.Com | By DERCED Partners.</p>
+    <a href="./terms-of-service.html">Terms and Conditions</a>
+</footer>
+</body>
+<script src="../js/menu.js"></script>
+<script src="../js/modal.js"></script>
+</html>
